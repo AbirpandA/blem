@@ -31,7 +31,7 @@ export async function generateTemplatePromt(prompt: string) {
 }
 
 
-export async function chat(messages:{ role: string, content: string }[]){
+export async function generateChatResponse(messages:{ role: string, content: string }[]){
     if (!process.env.GROQ_API_KEY) {
         throw new Error("GROQ_API_KEY environment variable is not set.");
     }
@@ -41,7 +41,7 @@ export async function chat(messages:{ role: string, content: string }[]){
         role:"system",
         content:getSystemPrompt(),},...messages]
 
-    const response = await fetch(' "https://api.groq.com/openai/v1/chat/completions', {
+    const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
