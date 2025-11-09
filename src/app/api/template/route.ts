@@ -4,8 +4,6 @@ import { basePrompt as reactBasePrompt } from "@/lib/defaults/react";
 import { generateTemplatePromt } from "@/lib/groq";  
 import { BASE_PROMPT } from "@/lib/prompts";
 
-
-
 export async function POST(request: NextRequest) {
     try{
         const {prompt}=await request.json();
