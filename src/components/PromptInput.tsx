@@ -166,7 +166,7 @@ export function PromptInput({
       />
 
       {/* Bottom gradient line */}
-      <div className="absolute bg-gradient-to-r from-transparent via-cyan-500/80 to-transparent w-full h-[1px] bottom-0 left-0" />
+      <div className="absolute bg-gradient-to-r from-transparent via-cyan-500/80 to-transparent w-full h-[1px] top-0 left-0" />
 
       {/* Bottom controls */}
       <div className="flex items-center justify-between pt-2 px-1">
