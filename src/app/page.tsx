@@ -12,7 +12,7 @@ const Page = () => {
   return (
     <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] flex justify-center items-center">
       <Container>
-        <div className="flex flex-col  text-center  max-w-150 gap-5">
+        <div className="flex flex-col  text-center  max-w-2xl gap-5">
           <div>
             <h1 className="text-4xl font-bold tracking-loose ">
               Time to
@@ -21,7 +21,7 @@ const Page = () => {
               </span>{" "}
               something
             </h1>
-            <p className="teacking tight text-xl text-gray-400">
+            <p className="tracking-tight text-xl text-gray-400">
               Create stunning websites{" "}
             </p>
           </div>
